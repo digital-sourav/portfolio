@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study: A Dental Clinic Based in Wisconsin, US.</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { serif: ['"Alegreya"', 'serif'], sans: ['"Inter"', 'sans-serif'], }, colors: { brand: { 400: '#a32a46', 500: '#8b2137', 900: '#2b0a11', }, dark: { bg: '#111111', card: '#161616', border: '#2a2a2a' } } } }
+    }
+  </script>
+</head>
+<body class="bg-dark-bg text-gray-300 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- IDENTICAL HEADER -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <span class="brand-name">Sourav Pal</span>
+        <span class="brand-title">SEO Professional</span>
+      </a>
+      
+      <nav class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Work</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#skills">Education</a>
+      </nav>
+      
+      <div class="nav-actions" style="display: flex; align-items: center; gap: 16px;">
+        <a href="index.html#contact" class="btn btn-outline desktop-only">Get In Touch</a>
+        
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="index.html#about" class="mobile-link">About</a>
+      <a href="index.html#projects" class="mobile-link">Work</a>
+      <a href="index.html#experience" class="mobile-link">Experience</a>
+      <a href="index.html#skills" class="mobile-link">Education</a>
+      <a href="index.html#contact" class="btn btn-primary mt-4 mobile-link">Get In Touch</a>
+    </div>
+  </div>
+
+  <main class="flex-grow">
+    <section class="section container pt-20 pb-12 border-b border-dark-border text-center">
+      <div class="tag-red justify-center mb-6">Local Healthcare SEO</div>
+      <h1 class="text-5xl md:text-6xl font-serif font-bold text-white leading-tight max-w-4xl mx-auto mb-8">
+        Case Study: A Dental Clinic Based in <span class="italic text-brand-500">Wisconsin, US.</span>
+      </h1>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 max-w-5xl mx-auto">
+        <div class="bg-dark-card border border-dark-border p-6 rounded-xl">
+          <div class="text-3xl font-bold text-white">+290%</div>
+          <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-2 font-bold">Traffic Increase</div>
+        </div>
+        <div class="bg-dark-card border border-dark-border p-6 rounded-xl">
+          <div class="text-3xl font-bold text-brand-500">#1</div>
+          <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-2 font-bold">Map Pack Ranking</div>
+        </div>
+        <div class="bg-dark-card border border-dark-border p-6 rounded-xl">
+          <div class="text-3xl font-bold text-white">9+ to 1.5s</div>
+          <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-2 font-bold">Speed Index Drop</div>
+        </div>
+        <div class="bg-dark-card border border-dark-border p-6 rounded-xl">
+          <div class="text-3xl font-bold text-white">6 Months</div>
+          <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-2 font-bold">Project Duration</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container py-16">
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="md:col-span-1 space-y-8">
+          <div>
+            <h4 class="text-xs text-brand-400 uppercase tracking-widest font-bold mb-2">Location</h4>
+            <p class="text-white text-lg font-serif">DeForest & Madison, WI</p>
+          </div>
+          <div>
+            <h4 class="text-xs text-brand-400 uppercase tracking-widest font-bold mb-2">Timeline</h4>
+            <p class="text-white text-lg font-serif">Jan 2025 – Jun 2025</p>
+          </div>
+          <div>
+            <h4 class="text-xs text-brand-400 uppercase tracking-widest font-bold mb-2">Objectives</h4>
+            <ul class="space-y-2 mt-2">
+              <li class="flex items-start gap-2 text-sm text-gray-400"><i data-lucide="check" class="w-4 h-4 text-brand-500 shrink-0 mt-0.5"></i> Increase organic traffic.</li>
+              <li class="flex items-start gap-2 text-sm text-gray-400"><i data-lucide="check" class="w-4 h-4 text-brand-500 shrink-0 mt-0.5"></i> Improve targeted keyword rankings.</li>
+              <li class="flex items-start gap-2 text-sm text-gray-400"><i data-lucide="check" class="w-4 h-4 text-brand-500 shrink-0 mt-0.5"></i> Strengthen local visibility for WI radius.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="md:col-span-2 space-y-8">
+          <h2 class="text-3xl font-serif font-bold text-white border-l-2 border-brand-500 pl-4">Project & Client Overview</h2>
+          <p class="text-gray-400 leading-relaxed mb-6">
+            The client is a well-established, comprehensive dental care practice located in DeForest, Wisconsin, serving the greater Madison metropolitan area. While they maintained a strong physical clinic and a loyal patient base for routine and advanced restorative care, their digital footprint had stagnated, limiting their ability to capture high-intent local search demand.
+          </p>
+
+          <h2 class="text-3xl font-serif font-bold text-white border-l-2 border-brand-500 pl-4 mt-10">The Challenge</h2>
+          <p class="text-gray-400 leading-relaxed">
+            Despite the practice having a long-standing website and physical outlet, the domain suffered from negligible traffic and poor organic visibility. The site failed to rank for high-priority client keywords and was plagued by severe technical issues.
+          </p>
+          <p class="text-gray-400 leading-relaxed">
+            An initial audit revealed toxic indexation (such as "/thank-you/" and "/lp/*" pages appearing in SERPs), high load times, a weak backlink profile, and absolutely no presence in local search radiuses across DeForest and Madison.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-card border-y py-20">
+      <div class="container max-w-5xl">
+        <div class="tag-red mb-6">Methodology</div>
+        <h2 class="text-4xl font-serif font-bold text-white mb-12">Strategic Execution</h2>
+        
+        <div class="space-y-12">
+          <div class="flex gap-6">
+            <div class="w-12 h-12 rounded-lg bg-dark-bg border border-brand-500 flex items-center justify-center shrink-0">
+              <i data-lucide="settings" class="text-brand-500 w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-serif font-bold text-white mb-3">Technical SEO & Core Web Vitals</h3>
+              <ul class="list-disc pl-5 space-y-2 text-gray-400 text-sm leading-relaxed">
+                <li>Reduced Largest Contentful Paint (LCP) from 9+ seconds by converting outdated PNG images to next-gen WebP formats using TinyPNG.</li>
+                <li>Eliminated Cumulative Layout Shift (CLS) errors by explicitly defining image dimensions in WordPress custom CSS.</li>
+                <li>Fixed critical indexation and accessibility by updating robots.txt with the sitemap.xml and placing an HTML sitemap in the footer.</li>
+                <li>Implemented targeted Schema Markup, including Organization, Local Business (Dentist), Breadcrumbs, and FAQ Page schemas.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="w-12 h-12 rounded-lg bg-dark-bg border border-brand-500 flex items-center justify-center shrink-0">
+              <i data-lucide="layout-template" class="text-brand-500 w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-serif font-bold text-white mb-3">On-Page & Topical Authority</h3>
+              <ul class="list-disc pl-5 space-y-2 text-gray-400 text-sm leading-relaxed">
+                <li>Resolved severe anchor text spam and keyword stuffing across legacy blogs.</li>
+                <li>Restructured URL architecture for immediate impact, changing paths from <code>/services/service1.html</code> to localized paths like <code>/location/service1.html</code>.</li>
+                <li>Developed a 3-month keyword strategy utilizing topical clusters and engaging blog formats (listicles, how-to guides) to drastically improve Time To Value.</li>
+                <li>Secured "People Also Ask" SERP features by integrating ACF-powered FAQ sections directly onto service pages.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="w-12 h-12 rounded-lg bg-dark-bg border border-brand-500 flex items-center justify-center shrink-0">
+              <i data-lucide="map-pin" class="text-brand-500 w-6 h-6"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-serif font-bold text-white mb-3">Local SEO & Off-Page Authority</h3>
+              <ul class="list-disc pl-5 space-y-2 text-gray-400 text-sm leading-relaxed">
+                <li>Overhauled the Google Business Profile (GBP) with geo-targeted images, service-specific updates, and linked social accounts.</li>
+                <li>Utilized Local Falcon to map and monitor localized grid visibility.</li>
+                <li>Acquired high-quality backlinks via digital PR and guest blogging, maintaining strict NAP consistency to ensure localized authority.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container py-20">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="tag-red justify-center">The Impact</div>
+        <h2 class="text-4xl font-serif font-bold text-white mb-4">Unlocking Raw Organic Potential</h2>
+        <p class="text-gray-400">Within six months, the site transformed from a stagnant digital asset into a dominant local acquisition channel, capturing top positions in the Google Map Pack and AI Overviews.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="bg-dark-card border border-dark-border rounded-xl overflow-hidden">
+          <div class="bg-dark-bg px-6 py-4 border-b border-dark-border">
+            <h4 class="text-white font-serif font-bold text-xl">Top Ranking Movements</h4>
+          </div>
+          <div class="p-6 space-y-4">
+            <div class="flex justify-between items-center border-b border-dark-border pb-3">
+              <span class="text-sm text-gray-300">DeForest Dentist <span class="text-gray-500 text-xs">(880 Clicks/Mo)</span></span>
+              <span class="text-brand-500 font-bold">#1 (Map Pack)</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-dark-border pb-3">
+              <span class="text-sm text-gray-300">Dentist DeForest <span class="text-gray-500 text-xs">(880 Clicks/Mo)</span></span>
+              <span class="text-brand-500 font-bold">#1 (Map Pack)</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-dark-border pb-3">
+              <span class="text-sm text-gray-300">Dental Implants Deforest <span class="text-gray-500 text-xs">(20 Clicks/Mo)</span></span>
+              <span class="text-brand-500 font-bold">#1 (Map Pack)</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-dark-border pb-3">
+              <span class="text-sm text-gray-300">Madison Dentist <span class="text-gray-500 text-xs">(6.6K Clicks/Mo)</span></span>
+              <span class="text-white font-bold">#3 (SERP)</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-gray-300">Dentist Madison <span class="text-gray-500 text-xs">(1.6K Clicks/Mo)</span></span>
+              <span class="text-white font-bold">#5 (SERP)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="p-8 border-l-4 border-brand-500 bg-brand-900/10 rounded-r-xl">
+            <h3 class="text-3xl font-serif font-bold text-white mb-2">290% Traffic Surge</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Started with around 900 visits a month in January 2025. By June 2025, the targeted local SEO strategy drove traffic to an impressive 2.7K visits a month.
+            </p>
+          </div>
+          <div class="p-8 border-l-4 border-brand-500 bg-brand-900/10 rounded-r-xl">
+            <h3 class="text-3xl font-serif font-bold text-white mb-2">Core Web Vitals</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Speed Index plummeted from a sluggish 4.1s down to 1.5s on desktop, achieving perfect 100/100 Best Practices scores while eliminating total blocking time entirely.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-card border-t border-dark-border py-20">
+      <div class="container">
+        <h2 class="text-3xl font-serif font-bold text-white mb-10 text-center">Visual Proof & Analytics</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-dark-bg border border-dark-border p-2 rounded-xl shadow-2xl">
+            <img src="ahrefs-proof.png" alt="Ahrefs Domain Rating and Organic Traffic Proof" class="w-full h-auto rounded-lg opacity-90 hover:opacity-100 transition-opacity">
+            <p class="text-center text-xs text-gray-500 mt-3 mb-2 font-bold uppercase tracking-wider">Ahrefs Organic Growth</p>
+          </div>
+          
+          <div class="bg-dark-bg border border-dark-border p-2 rounded-xl shadow-2xl">
+            <img src="pagespeed-proof.png" alt="PageSpeed Insights Before and After" class="w-full h-auto rounded-lg opacity-90 hover:opacity-100 transition-opacity">
+            <p class="text-center text-xs text-gray-500 mt-3 mb-2 font-bold uppercase tracking-wider">PageSpeed Insights Improvements</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- IDENTICAL FOOTER -->
+  <footer id="contact" class="site-footer mt-auto">
+    <div class="container footer-content">
+      <div class="footer-cta">
+        <div>
+          <div class="tag-red"><span class="pulse"></span> Start a Conversation</div>
+          <h2 class="footer-title">Ready to scale your <br><span class="italic text-brand">organic revenue?</span></h2>
+        </div>
+        <a href="mailto:sourav.pal896@hotmail.com" class="btn btn-primary">Get In Touch</a>
+      </div>
+      
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Sourav Pal</h3>
+          <span class="footer-role">Senior SEO Professional</span>
+          <p>Bridging the gap between technical search dominance and high-converting user experiences to drive full-funnel e-commerce growth.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="index.html#about">The Philosophy</a>
+          <a href="index.html#experience">Career Trajectory</a>
+          <a href="index.html#projects">Case Studies</a>
+          <a href="index.html#skills">SEO Arsenal</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Connect</h4>
+          <a href="mailto:sourav.pal896@hotmail.com">sourav.pal896@hotmail.com</a>
+          <a href="https://linkedin.com/in/digital-marketer-sourav">LinkedIn Profile</a>
+          <span>Chandannagar, West Bengal</span>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2026 SOURAV PAL. ALL RIGHTS RESERVED.</p>
+        <p>ENGINEERED FOR CONVERSION <i data-lucide="zap" class="small-icon"></i></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    let isMenuOpen = false;
+
+    hamburgerBtn.addEventListener('click', () => {
+      isMenuOpen = !isMenuOpen;
+      if(isMenuOpen) {
+        mobileMenu.classList.add('active');
+        hamburgerBtn.innerHTML = '<i data-lucide="x"></i>'; 
+      } else {
+        mobileMenu.classList.remove('active');
+        hamburgerBtn.innerHTML = '<i data-lucide="menu"></i>'; 
+      }
+      lucide.createIcons(); 
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        isMenuOpen = false;
+        mobileMenu.classList.remove('active');
+        hamburgerBtn.innerHTML = '<i data-lucide="menu"></i>';
+        lucide.createIcons();
+      });
+    });
+  </script>
+</body>
+</html>
